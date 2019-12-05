@@ -24,20 +24,20 @@ npm start
 | Parameter | Value |
 | --------  | ----- |
 |Client Name | Implicit Test Client |
-Application Type	                      Web
-Pre-Authorization	                      Enabled
-Subject Type	                          public
-Scopes	                                email, openid and profile
-Response Types	                        id_token, token
-Grant Types	                            implicit
-Redirect Login URIs	                    https://localhost/login-callback.html
+|Application Type   | Web |
+|Pre-Authorization | Enabled |
+|Subject Type | public |
+|Scopes | email, openid and profile |
+|Response Types | id_token, token |
+|Grant Type | implicit |
+|Redirect Login URIs | https://localhost/login-callback.html |
 
 **3:** Edit test.html as appropriate
-            var clientInfo = {
+         {  var clientInfo = {
                 client_id : '0037f7f2-5664-47b8-a3fc-0b4a8037364b',
                 redirect_uri : 'http://192.168.100.171:3000/login-callback.html'
             };
          var providerInfo = OIDC.discover('https://gluu4');
-
+         }
 **4:** Test
 
