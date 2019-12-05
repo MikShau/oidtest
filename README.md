@@ -14,9 +14,24 @@ Ref: https://www.gluu.org/blog/openid-connect-implicit-client/
 
 1: install the nodejs code in this repository on a suitable machine that resides on the same network as the gluu server.
 
-2:
+git clone https://github.com/MikShau/oidtest.git
 
-3:
+npm install
+npm start
 
-4:
+2: Define client on Gluu server as follows:
+Parameter
+Value
+Client Name	Implicit Test Client
+Application Type	Web
+Pre-Authorization	Enabled
+Subject Type	public
+Scopes	email, openid and profile
+Response Types	id_token, token
+Grant Types	implicit
+Redirect Login URIs	https://localhost/login-callback.html
+
+3: Edit test.html as appropriate
+
+4: Test
 
