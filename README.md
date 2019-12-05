@@ -41,7 +41,7 @@ npm start
          };
             var providerInfo = OIDC.discover('https://gluu4');
         
-       Change client_id, redirect_url, and OIDC.discover to match your environment.
+Change client_id, redirect_url, and OIDC.discover to match your environment.
        
 **4:** Test by pointing a browser at http://<name or ip of node box>/test.html
          
