@@ -34,13 +34,14 @@ npm start
 
 **3:** Edit test.html as appropriate:
 
-       ```javascript
+       
        var clientInfo = {
            client_id : '0037f7f2-5664-47b8-a3fc-0b4a8037364b',
            redirect_uri : 'http://192.168.100.171:3000/login-callback.html'
          };
             var providerInfo = OIDC.discover('https://gluu4');
-       ``` 
+        
+       Change client_id, redirect_url, and OIDC.discover to match your environment.
        
 **4:** Test by pointing a browser at http://<name or ip of node box>/test.html
          
