@@ -21,8 +21,9 @@ npm start
 
 **2:** Define client on Gluu server as follows:
 
-| Parameter |   Value |
-Client Name	                            Implicit Test Client
+| Parameter | Value |
+| --------  | ----- |
+|Client Name | Implicit Test Client |
 Application Type	                      Web
 Pre-Authorization	                      Enabled
 Subject Type	                          public
@@ -36,8 +37,7 @@ Redirect Login URIs	                    https://localhost/login-callback.html
                 client_id : '0037f7f2-5664-47b8-a3fc-0b4a8037364b',
                 redirect_uri : 'http://192.168.100.171:3000/login-callback.html'
             };
-
-            var providerInfo = OIDC.discover('https://gluu4');
+         var providerInfo = OIDC.discover('https://gluu4');
 
 **4:** Test
 
