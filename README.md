@@ -9,19 +9,19 @@ http://<node app name or ip>:3000/test.html
 The code will contact the gluu server and display a page with info.
 click the button to authenticate.
 
-#2 Installation
+## Installation
 Ref: https://www.gluu.org/blog/openid-connect-implicit-client/
 
-1: install the nodejs code in this repository on a suitable machine that resides on the same network as the gluu server.
+**1:** install the nodejs code in this repository on a suitable machine that resides on the same network as the gluu server.
 
 git clone https://github.com/MikShau/oidtest.git
 
 npm install
 npm start
 
-2: Define client on Gluu server as follows:
+**2:** Define client on Gluu server as follows:
 
-Parameter                               Value
+| Parameter |   Value |
 Client Name	                            Implicit Test Client
 Application Type	                      Web
 Pre-Authorization	                      Enabled
@@ -31,7 +31,7 @@ Response Types	                        id_token, token
 Grant Types	                            implicit
 Redirect Login URIs	                    https://localhost/login-callback.html
 
-3: Edit test.html as appropriate
+**3:** Edit test.html as appropriate
             var clientInfo = {
                 client_id : '0037f7f2-5664-47b8-a3fc-0b4a8037364b',
                 redirect_uri : 'http://192.168.100.171:3000/login-callback.html'
@@ -39,5 +39,5 @@ Redirect Login URIs	                    https://localhost/login-callback.html
 
             var providerInfo = OIDC.discover('https://gluu4');
 
-4: Test
+**4:** Test
 
