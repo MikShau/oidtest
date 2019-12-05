@@ -8,3 +8,15 @@ app is accessed on port 3000. modify test.html to fit the client definitions in 
 http://<node app name or ip>:3000/test.html
 The code will contact the gluu server and display a page with info.
 click the button to authenticate.
+
+Installation
+Ref: https://www.gluu.org/blog/openid-connect-implicit-client/
+
+1: install the nodejs code in this repository on a suitable machine that resides on the same network as the gluu server.
+
+2:
+
+3:
+
+4:
+
