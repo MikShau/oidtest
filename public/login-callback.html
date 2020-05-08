@@ -15,12 +15,12 @@
             var tokenClaims = JSON.parse(OIDC.getIdTokenParts(id_token)[1]);
             var userInfoClaims = JSON.parse(OIDC.getUserInfo(access_token));
             var tokenClaimsHTMLString = JSONObjToHTMLTable(tokenClaims);
-            var userInfoClaimsHTMLString = JSONObjToHTMLTable(userInfoClaims);
+            var userInfoClaimsHTMLString = JSONObjToHTMLTable(access_token);
             OIDC.debug(true, id_token);
 
             function print_id_token(){
-                document.getElementById("retrievedInfo").innerHTML = '<b>Id_token</b>' + tokenClaimsHTMLString +
-                                                                '\n<b>User Info</b>' + userInfoClaimsHTMLString;
+                document.getElementById("retrievedInfo").innerHTML = '<p> Id_token  </p>' + id_token +
+                                                                '\n\n<p>  Access_token  </p>' +  access_token;
             }
         </script>
     </HEAD>
